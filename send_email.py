@@ -6,8 +6,6 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 from email import Encoders
 
-__author__ = 'Rob Morris'
-
 def send_mail(send_from, send_to, subject, text="", cc=[], server="localhost"):
     assert type(send_to)==list
     assert type(files)==list
