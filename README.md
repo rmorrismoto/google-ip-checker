@@ -6,11 +6,14 @@ When a change is detected - whether a block is added or removed, or a combinatio
 
 sendmail must be enabled on the machine to work. SMTP options could be changed to use a Google Account.
 
+The script just stores the results in text files as JSON, and also creates a log file.
+
+To run the script ad-hoc...
 ```bash
 $ python google_ip_check.py
 ```
 
-We put the following task to be run by cron
+We put the following task to be run by cron.
 ```bash
 00 * * * * python google_ip_check/google_ip_check.py
 ```
